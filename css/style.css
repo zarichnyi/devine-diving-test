@@ -28,27 +28,6 @@
     justify-content: center;
     text-transform: uppercase; }
 
-.nav__list {
-  display: flex; }
-.nav__item {
-  display: flex;
-  align-items: center; }
-  .nav__item--divider::after {
-    content: "";
-    height: 100%;
-    width: 1px;
-    background-color: #92B3A8; }
-.nav__link {
-  padding: 30px 120px;
-  letter-spacing: 0.5px;
-  justify-items: center;
-  text-transform: uppercase;
-  color: #fff; }
-  .nav__link:hover {
-    transition: 0.9s;
-    background-color: #1799B5;
-    opacity: 0.8; }
-
 @media screen and (min-width: 1200px) {
   .container {
     padding: 0 calc(50% - 960px); } }
@@ -145,6 +124,27 @@
   .section-title--subtitle {
     font-size: 20px; }
 
+.nav__list {
+  display: flex; }
+.nav__item {
+  display: flex;
+  align-items: center; }
+  .nav__item--divider::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #92B3A8; }
+.nav__link {
+  padding: 30px 120px;
+  letter-spacing: 0.5px;
+  justify-items: center;
+  text-transform: uppercase;
+  color: #fff; }
+  .nav__link:hover {
+    transition: 0.9s;
+    background-color: #1799B5;
+    opacity: 0.8; }
+
 * {
   box-sizing: border-box; }
 
@@ -179,13 +179,13 @@ p {
   height: 40px;
   font-family: "ubuntu", sans-serif; }
 
-.header__button-center, .nav__link, .toolbar__input, .post-item__description, .about-us__description-text, .form__user-name-label, .form__user-email-label, .form__user-messsage-label, .button-wrapper__button {
+.header__button-center, .toolbar__input, .post-item__description, .about-us__description-text, .form__user-name-label, .form__user-email-label, .form__user-messsage-label, .button-wrapper__button, .nav__link {
   font-size: 15px;
   font-family: "ubuntu", sans-serif; }
 
-.header__button-center, .nav__link, .button-wrapper__button {
+.header__button-center, .button-wrapper__button, .nav__link {
   transition: transform 0.5s; }
-  .header__button-center:active, .nav__link:active, .button-wrapper__button:active {
+  .header__button-center:active, .button-wrapper__button:active, .nav__link:active {
     transform: scale(0.8); }
 
 .header__button-center:hover, .button-wrapper__button:hover {
