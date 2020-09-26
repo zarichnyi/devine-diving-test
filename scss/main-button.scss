@@ -1,0 +1,16 @@
+.button-wrapper{
+  display: flex;
+  justify-content: flex-end;
+
+  &__button {
+    text-transform: uppercase;
+    @extend %regular-text;
+    @extend %scale-animation;
+    @extend %hover-animation;
+    color: $white-color;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: $theme-color;
+  }
+}

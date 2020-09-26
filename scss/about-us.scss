@@ -1,0 +1,13 @@
+.about-us {
+  margin: 40px 0;
+
+  &__description-text {
+    margin-bottom: 20px;
+    @extend %regular-text;
+    font-weight: $normal-text;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

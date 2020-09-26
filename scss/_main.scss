@@ -1,0 +1,72 @@
+@import "header";
+@import "main-content";
+@import "post-items";
+@import "about-us";
+@import "contact-form";
+@import "footer";
+@import "main-button";
+@import "section-title";
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+%button {
+  width: 200px;
+  height: 40px;
+  font-family: $font-family;
+}
+
+%regular-text {
+  font-size: $normal-text-size;
+  font-family: $font-family;
+}
+
+%scale-animation {
+  transition: transform 0.5s;
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+%hover-animation {
+  &:hover {
+    transition: 0.9s;
+    background-color: #1799B5;
+  }
+}
+

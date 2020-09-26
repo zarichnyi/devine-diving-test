@@ -1,0 +1,35 @@
+.post-item {
+  display: flex;
+  flex-direction: row;
+  padding: 11px;
+  background-color: #eff0f0;
+  margin-bottom: 15px;
+
+  &__container {
+    margin: 0 11px;
+  }
+
+  &__content {
+    padding: 15px 0;
+  }
+
+  &__date {
+    border-bottom: 1px solid #00aeae;
+    color: red;
+    padding: 0px 0px 10px 5px;
+    font-size: $normal-text-size;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: $post-title-size;
+    color: $theme-color;
+    margin: 8px 0;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @extend %regular-text;
+    font-weight: $normal-text;
+  }
+}

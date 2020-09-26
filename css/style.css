@@ -1,0 +1,193 @@
+.header {
+  background: url(../img/header_background_v2.jpg) center/cover;
+  height: 100vh; }
+  .header__top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .header__logo--img {
+    width: 225px;
+    height: 135px; }
+  .header__center {
+    position: relative;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .header__center--title {
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "ubuntu", sans-serif;
+      font-weight: 500; }
+  .header__button-center {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+    background-color: #00aeae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; }
+
+.nav__list {
+  display: flex; }
+.nav__item {
+  display: flex;
+  align-items: center; }
+  .nav__item--divider::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #92B3A8; }
+.nav__link {
+  padding: 30px 120px;
+  letter-spacing: 0.5px;
+  justify-items: center;
+  text-transform: uppercase;
+  color: #fff; }
+  .nav__link:hover {
+    transition: 0.9s;
+    background-color: #1799B5;
+    opacity: 0.8; }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 calc(50% - 960px); } }
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15vw; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0; }
+  .toolbar__input {
+    border: 1px solid #00aeae;
+    padding: 0 15px; }
+
+.post-item {
+  display: flex;
+  flex-direction: row;
+  padding: 11px;
+  background-color: #eff0f0;
+  margin-bottom: 15px; }
+  .post-item__container {
+    margin: 0 11px; }
+  .post-item__content {
+    padding: 15px 0; }
+  .post-item__date {
+    border-bottom: 1px solid #00aeae;
+    color: red;
+    padding: 0px 0px 10px 5px;
+    font-size: 15px; }
+  .post-item__title {
+    font-family: "ubuntu", sans-serif;
+    font-size: 20px;
+    color: #00aeae;
+    margin: 8px 0;
+    text-transform: uppercase; }
+  .post-item__description {
+    font-weight: 300; }
+
+.about-us {
+  margin: 40px 0; }
+  .about-us__description-text {
+    margin-bottom: 20px;
+    font-weight: 300; }
+  .about-us__image {
+    width: 100%; }
+
+.form__user-contact-data {
+  display: flex;
+  margin: 25px 0; }
+.form__user-name, .form__user-email, .form__user-messsage {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 100%; }
+.form__user-messsage {
+  margin: 25px 0; }
+.form__user-email {
+  margin-left: 10px; }
+.form__user-name-input, .form__user-email-input {
+  height: 50px;
+  border: 1px solid #00aeae; }
+.form__user-text-message {
+  height: 100px;
+  padding: 10px 20px;
+  border: 1px solid #00aeae; }
+.form__user-name-label, .form__user-email-label, .form__user-messsage-label {
+  color: #00aeae; }
+
+.footer {
+  margin: 20px; }
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end; }
+  .button-wrapper__button {
+    text-transform: uppercase;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #00aeae; }
+
+.section-title {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 24px; }
+  .section-title--subtitle {
+    font-size: 20px; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+.header__button-center, .toolbar__input {
+  width: 200px;
+  height: 40px;
+  font-family: "ubuntu", sans-serif; }
+
+.header__button-center, .nav__link, .toolbar__input, .post-item__description, .about-us__description-text, .form__user-name-label, .form__user-email-label, .form__user-messsage-label, .button-wrapper__button {
+  font-size: 15px;
+  font-family: "ubuntu", sans-serif; }
+
+.header__button-center, .nav__link, .button-wrapper__button {
+  transition: transform 0.5s; }
+  .header__button-center:active, .nav__link:active, .button-wrapper__button:active {
+    transform: scale(0.8); }
+
+.header__button-center:hover, .button-wrapper__button:hover {
+  transition: 0.9s;
+  background-color: #1799B5; }
