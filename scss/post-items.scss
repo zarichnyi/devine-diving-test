@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   padding: 11px;
-  background-color: #eff0f0;
+  background-color: $post-background;
   margin-bottom: 15px;
 
   &__container {
@@ -14,7 +14,7 @@
   }
 
   &__date {
-    border-bottom: 1px solid #00aeae;
+    border-bottom: 1px solid $theme-color;
     color: red;
     padding: 0px 0px 10px 5px;
     font-size: $normal-text-size;

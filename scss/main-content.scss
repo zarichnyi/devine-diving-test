@@ -19,7 +19,7 @@
   &__input {
     @extend %button;
     @extend %regular-text;
-    border: 1px solid #00aeae;
+    border: 1px solid $theme-color;
     padding: 0 15px;
   }
 }

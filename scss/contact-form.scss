@@ -24,13 +24,13 @@
   &__user-name-input,
   &__user-email-input {
     height: 50px;
-    border: 1px solid #00aeae;
+    border: 1px solid $theme-color;
   }
 
   &__user-text-message {
     height: 100px;
     padding: 10px 20px;
-    border: 1px solid #00aeae;
+    border: 1px solid $theme-color;
   }
 
   &__user-name-label,
